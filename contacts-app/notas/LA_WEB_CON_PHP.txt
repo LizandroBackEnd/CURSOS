@@ -1,0 +1,12 @@
+PROTOCOLO IP: El protocolo ip es llegar de una maquina a otra a través de Internet. 
+ 
+PROTOCOLO TCP: El protocolo tcp hace que los paquetes o las peticiones que hagas no se envien de forma corrupta, que lleguen desordenados, etc.  
+El protocolo tpc hace que si se envia de forma desordenada a la hora de enviar los datos a tu pc osea de peticion se reeodenen y si el almacenamiento  
+del servidor no resiste más peticiones el servidor te lo diga. 
+ 
+CGI: Common Gateway Interface o interfaz de entrada comun es una interfaz de los servidores web que permiten ntercambiar datos entre los servidores  
+y las aplicaciones externas de manera estandarizada. Un ejemplo seria: 
+-Cuando mandas contenido php dentro de html este se envia a apache y de apache a google y despues google mediante un puerto te envia o más bien te 
+pinta el contenido en tu pc. 
+ 
+ 

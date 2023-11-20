@@ -1,0 +1,12 @@
+{ 
+    "[php]":{ 
+        "editor.tabSize":2
+    },  
+    "[html]":{ 
+        "editor.tabSize":2
+    }, 
+    "[javascrpt]":{ 
+        "editor.tabSize":2
+    }, 
+    "files.insertFinalNewline": true
+}
