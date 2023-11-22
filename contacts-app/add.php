@@ -1,11 +1,15 @@
-<?php 
-  
-  if($_SERVER["REQUEST_METHOD"] == "POST"){ 
-    $contact = [ 
-      "name" => $_POST["name"],  
-      "phone_number" => $_POST["phone_number"], 
+<?php  
+ 
+require "database.php";
 
-    ];
+  if($_SERVER["REQUEST_METHOD"] == "POST"){ 
+      $name = $_POST["name"];  
+      $phoneNumber = $_POST["phone_number"];  
+       
+      $statement = $conn->prepare("INSERT INTO contacts (name, phone_number) VALUES ('$name', '$phoneNumber')"); 
+      $statement->execute();
+       
+      header("Location: index.php");
   }
  ?>
   
