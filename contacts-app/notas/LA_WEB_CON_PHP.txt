@@ -7,6 +7,11 @@ del servidor no resiste más peticiones el servidor te lo diga.
 CGI: Common Gateway Interface o interfaz de entrada comun es una interfaz de los servidores web que permiten ntercambiar datos entre los servidores  
 y las aplicaciones externas de manera estandarizada. Un ejemplo seria: 
 -Cuando mandas contenido php dentro de html este se envia a apache y de apache a google y despues google mediante un puerto te envia o más bien te 
-pinta el contenido en tu pc. 
+pinta el contenido en tu pc.  
  
+SESIONES: Las sesiones son informacion que se guarda en el servidor sobre el usuario. 
+
+COOKIES: Una cookie es lo mismo que una sesión pero para el cliente, es decir una cookie se almacena en el navegador y el navegador cuando pida cosas 
+a nuestra pagina web nos manda a esa cookie, con esa cookie nosotros ya sabemos cual es la sesión del usuario. 
  
+HTTP SET-COOKIE: Se usa para enviar cookies desde el servidor al agente de usuario, asi el agente de usuario puede enviarlos de vuelta al servidor. 
