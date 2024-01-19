@@ -1,0 +1,35 @@
+.mastermind{ 
+    background-color: #FD0C49; 
+    color: #fff;  
+ } 
+
+ .mastermind80{ 
+    background-color: #FD0C49; 
+    color: #fff; 
+    opacity: 0.8; 
+    border-radius: 10px;
+} 
+ 
+.mastermindgray80{ 
+    background-color: #9b9b9b ; 
+    color: #fff; 
+    opacity: 0.8;
+} 
+ 
+.mastermindgray60{ 
+    background-color: #9b9b9b; 
+    color: #fff; 
+    opacity: 0.6;
+} 
+ 
+.mastermind60{ 
+    background-color: #FD0C49; 
+    color: #9b9b9b; 
+    opacity: 0.6;
+} 
+ 
+.mastermind40{ 
+    background-color: #FD0C49; 
+    columns: #0000; 
+    opacity: 0.4;
+}

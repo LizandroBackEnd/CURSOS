@@ -1,0 +1,26 @@
+
+.bootnav {
+    background-color: #6f42c1; 
+}
+
+.bootnav a {
+    color: #fff !important; 
+}
+
+.bootnav a:hover {
+    color: #8E50F2 !important; 
+}
+
+.bootnav .navbar-nav {
+    margin-left: 10px; 
+}
+
+.bootnav .nav-item {
+    margin-right: 10px; 
+}
+
+.bootnav .form-control {
+    margin-right: 10px; 
+}
+
+

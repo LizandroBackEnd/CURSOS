@@ -1,0 +1,34 @@
+.cabecera{ 
+    background-color: #2E32BA; 
+    color: #fff;
+} 
+ 
+.nvidia{ 
+    background-color: #26BD1F; 
+    color: #fff; 
+    opacity: 0.8;
+} 
+ 
+.msi{ 
+    background-color: #BA1A1A; 
+    color: #fff; 
+    opacity: 0.8;
+} 
+ 
+.colsair{ 
+    background-color: #EAEA2E; 
+    color: #fff; 
+    opacity: 0.8;
+} 
+ 
+.asus{ 
+    background-color: #B12EEA; 
+    color: #fff; 
+    opacity: 0.8;
+} 
+ 
+.razer{ 
+    background-color: #1AA917; 
+    color: #fff; 
+    opacity: 0.8;
+}

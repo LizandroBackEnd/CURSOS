@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo HTML&CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="./img/logo_web.png" alt="LOGO HTML&CSS"> <span class="align-middle">TODOHTML&CSS</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i> Comenzando</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-html"></i> HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="htmlEsencial.html">Esencial</a></li>
+                  <li><a class="dropdown-item" href="htmlEtPrincipales.html">Etiquetas principales</a></li>
+                  <li><a class="dropdown-item" href="#">HTML semántico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Formularios</a></li>
+                  <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-css"></i> CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Esencial</a></li>
+                  <li><a class="dropdown-item" href="#">Colores y fondos</a></li>
+                  <li><a class="dropdown-item" href="#">Box model</a></li>
+                  <li><a class="dropdown-item" href="#">Tipografía</a></li>
+                  <li><a class="dropdown-item" href="#">Grid</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pseudoelementos y clases</a></li>
+                  <li><a class="dropdown-item" href="#">Flex</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box"></i> Modelo de cajas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Semántico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end" href="#"><i class="bi bi-pencil-square"></i> Diseño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-file-font"></i> Google Fonts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-emoji-smile"></i> Fonts Awesome</a>
+              </li>
+              <div class="vr text-light"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cloud-arrow-up"></i> Git</a>
+              </li>
+            </ul>
+            <div class="navbar-nav text-light"><a class="nav-link" href="./feedback.html"><i class="bi bi-chat-right-text"></i> Feedback</a></div>
+          </div>
+        </div>
+    </nav>
+    <main class="container mt-3">
+        <!--LAYOUT 2 COLUMNAS-->
+        <div class="row">
+            <div class="col text-bg-light mb-3">
+                <p class="fs-3">Feedback</p>
+                <!--INICIO FORMULARIO-->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for shipping updates.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="c/Mayor Valencia" required="">
+                        <div class="invalid-feedback">
+                          Please enter your shipping address.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address2" class="form-label">Dirección 2 <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Bajo, apartado, polígono, ...">
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="country" class="form-label">Web</label>
+                        <select class="form-select" id="country" required="">
+                          <option value="">Elige...</option>
+                          <option>Mastermind</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="state" class="form-label">Categoría</label>
+                        <select class="form-select" id="state" required="">
+                          <option value="">Elige...</option>
+                          <option>Desarrollo</option>
+                          <option>Informática</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid state.
+                        </div>
+                      </div>
+          
+                    </div>
+          
+                    <hr class="my-4">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Explícate</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+
+                    <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">Enviar</button>
+                  </form>
+                <!--FIN FORMULARIO-->
+            </div>
+            <div class="col">
+                <!--INICIO PEQUEÑO TEXTO CON IMAGEN-->
+                <div class="card text-bg-dark">
+                    <img src="./img/opinion.jpg" class="card-img-top" alt="tu opinion">
+                    <div class="card-body">
+                      <h5 class="card-title">Tu opinión es importante</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem autem esse vel voluptate, veritatis saepe est delectus. Laboriosam perspiciatis doloremque adipisci sit ipsam dolorem. Nisi aliquam deleniti assumenda illo.</p>
+                </div>
+                <!--FIN PEQUEÑO TEXTO CON IMAGEN-->
+            </div>
+        </div>
+    </main>
+    <footer class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="https://mastermind.ac/home"><small class="p-0 muyPequenyo text-body-secondary">© Copyright Mastermind 2023</small></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+  </body>
+  </html>

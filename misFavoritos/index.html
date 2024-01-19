@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis favoritos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand p-0" href="index.html">
+                <img src="./img/logo_robot.png" alt="LOGO Mis Favoritos" height="38px"> <span class="align-middle">Mis Favoritos</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-fast-forward-btn"></i> Mis series</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cassette"></i> Mi música</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </nav>
+    <main class="container text-center mt-3">
+        <div class="row">
+            <!-- TABLA POR DEFECTO -->
+            <div class="col">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título en castellano</th>
+                    <th scope="col">Género</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Puntuación IMDB</th>
+                    <th scope="col">Enlace IMDB</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Stranger Things</td>
+                    <td>2016–2024</td>
+                    <td>Drama, Fantasía, Terror</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stranger"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Los Simpsons</td>
+                    <td>1989-</td>
+                    <td>Animacion, Comedia</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt0096697/?ref_=fn_al_tt_1"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hermanos de Sangre</td>
+                    <td>2001</td>
+                    <td>Drama, Histórico, Bélico</td>
+                    <td>9,4</td>
+                    <td><a href="https://www.imdb.com/title/tt0185906/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_brothers%2520"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Avatar. La leyenda de Aang</td>
+                    <td>2005–2008</td>
+                    <td>Animación, Acción, Aventura</td>
+                    <td>9,3</td>
+                    <td><a href="https://www.imdb.com/title/tt0417299/?ref_=nv_sr_srsg_0_tt_5_nm_0_q_avatar%2520la%2520ley"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- TABLA STRIPPED -->
+            <div class="col">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título en castellano</th>
+                    <th scope="col">Género</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Puntuación IMDB</th>
+                    <th scope="col">Enlace IMDB</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Stranger Things</td>
+                    <td>2016–2024</td>
+                    <td>Drama, Fantasía, Terror</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stranger"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Los Simpsons</td>
+                    <td>1989-</td>
+                    <td>Animacion, Comedia</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt0096697/?ref_=fn_al_tt_1"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hermanos de Sangre</td>
+                    <td>2001</td>
+                    <td>Drama, Histórico, Bélico</td>
+                    <td>9,4</td>
+                    <td><a href="https://www.imdb.com/title/tt0185906/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_brothers%2520"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Avatar. La leyenda de Aang</td>
+                    <td>2005–2008</td>
+                    <td>Animación, Acción, Aventura</td>
+                    <td>9,3</td>
+                    <td><a href="https://www.imdb.com/title/tt0417299/?ref_=nv_sr_srsg_0_tt_5_nm_0_q_avatar%2520la%2520ley"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <!-- TABLA HOVER-->
+            <div class="col">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título en castellano</th>
+                    <th scope="col">Género</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Puntuación IMDB</th>
+                    <th scope="col">Enlace IMDB</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Stranger Things</td>
+                    <td>2016–2024</td>
+                    <td>Drama, Fantasía, Terror</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stranger"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Los Simpsons</td>
+                    <td>1989-</td>
+                    <td>Animacion, Comedia</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt0096697/?ref_=fn_al_tt_1"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hermanos de Sangre</td>
+                    <td>2001</td>
+                    <td>Drama, Histórico, Bélico</td>
+                    <td>9,4</td>
+                    <td><a href="https://www.imdb.com/title/tt0185906/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_brothers%2520"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Avatar. La leyenda de Aang</td>
+                    <td>2005–2008</td>
+                    <td>Animación, Acción, Aventura</td>
+                    <td>9,3</td>
+                    <td><a href="https://www.imdb.com/title/tt0417299/?ref_=nv_sr_srsg_0_tt_5_nm_0_q_avatar%2520la%2520ley"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- TABLA STRIPPED HOVER-->
+            <div class="col">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título en castellano</th>
+                    <th scope="col">Género</th>
+                    <th scope="col">Año</th>
+                    <th scope="col">Puntuación IMDB</th>
+                    <th scope="col">Enlace IMDB</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Stranger Things</td>
+                    <td>2016–2024</td>
+                    <td>Drama, Fantasía, Terror</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_stranger"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Los Simpsons</td>
+                    <td>1989-</td>
+                    <td>Animacion, Comedia</td>
+                    <td>8,7</td>
+                    <td><a href="https://www.imdb.com/title/tt0096697/?ref_=fn_al_tt_1"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hermanos de Sangre</td>
+                    <td>2001</td>
+                    <td>Drama, Histórico, Bélico</td>
+                    <td>9,4</td>
+                    <td><a href="https://www.imdb.com/title/tt0185906/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_brothers%2520"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Avatar. La leyenda de Aang</td>
+                    <td>2005–2008</td>
+                    <td>Animación, Acción, Aventura</td>
+                    <td>9,3</td>
+                    <td><a href="https://www.imdb.com/title/tt0417299/?ref_=nv_sr_srsg_0_tt_5_nm_0_q_avatar%2520la%2520ley"><i class="bi bi-box-arrow-up-right"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+</html>

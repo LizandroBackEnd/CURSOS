@@ -1,0 +1,104 @@
+ LAYOUT  
+
+El layout es la disposicion de todos los elementos visuales que la componen. Mediante el posicionamiento intencionado de los elementos de la pagina,  
+podemos controlar la relacion entre ellos para guiar mejor la experiencia del usuario.
+
+ BREACKPOINTS 
+ 
+Son las medidas de anchura en donde se realizan saltos para el diseño responsive y se aplica los estilos CSS concretos para una determinadas medidas. 
+Es decir, los breackpoints son los saltos en los que la pantalla cambia de layout.  
+En Boostrap hay distintos tamaños para los diferentes dispositivos. 
+ 
+container-sm  -> mobile 
+container-md  -> tablet 
+container-lg  -> desktop 
+container-xl  -> desktop-pantallas Widescreen 
+container-xxl -> desktop-pantallas Ultra Wide 
+ 
+ EQUAL WIDTH  
+  
+Equal width se refiere a la distribucion equitativa del ancho entre varios elementos dentro de un contenedor.   
+ 
+EJEMPLO:
+ 
+|--------------------|--------------------| 
+|  1 of 2            |     2 of 2         |
+|--------------------|--------------------|  
+
+|---------------|----------|--------------|  
+| 1 of 3        |  2 of 3  |  3 of 3      | 
+|---------------|----------|--------------|  
+ 
+CODIGO: 
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div> 
+ 
+ SETTING ONE COLUMN WIDTH   
+Puedes establecer el ancho de una columna utilizando las clases de las columnas. El sistema de rejilla de Bootstrap divide la página en 12 columnas, 
+y puedes especificar cuántas de esas columnas debe ocupar un elemento. 
+ 
+EJEMPLO:  
+ 
+|---------------|-------------------------|---------------|  
+| 1 of 3        |   2 of 3 (más ancho)    |  3 of 3       | 
+|---------------|-------------------------|---------------|   
+ 
+|-----------------|--------------------|------------------|  
+| 1 of 3          | 2 of 3 (más ancho) |   3 of 3         |  
+|-----------------|--------------------|------------------|  
+ 
+CODIGO: 
+ 
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+ 
+ RESPONSIVE 
+  
+Para el responsive con Bootstrap puede usar la configuracion de los distintos tamaños como: sm, md, lg. La configuracion es la siguientes: 
+Para dispositivos pequeños 4 - 4 -4 
+Para dispositivos grandes 6 - 3 - 3  
+Mobile  -> apilado 
+Tablet  -> 4 - 4 - 4 
+Desktop -> 6 - 3 - 3
