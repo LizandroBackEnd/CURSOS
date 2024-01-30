@@ -1,0 +1,22 @@
+/*$deeppurble: #311b92; variable scss 
+$primary: $deeppurble; Cambiar de bootstrap a custom*/
+  
+// Importar las librerias a nuestro archivo para customisar 
+
+ 
+@import '../node_modules/bootstrap/scss/functions'; 
+@import '../node_modules/bootstrap/scss/variables';
+ 
+//Custom Mastermind theme 
+ 
+$masterdark: #B71C1C;  
+$masterlight: #FFCDD2;
+ 
+$master-colors: (  
+    "masterdark" : $masterdark, 
+    "masterlight" : $masterlight
+); 
+ 
+$theme-colors:map-merge($master-colors, $theme-colors); 
+ 
+@import '../node_modules/bootstrap/scss/bootstrap';   

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo HTML&CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="./css/prism.css">
+</head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="./img/logo_web.png" alt="LOGO HTML&CSS"> <span class="align-middle">TODOHTML&CSS</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i> Comenzando</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-html"></i> HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./htmlEscencial.html">Esencial</a></li>
+                  <li><a class="dropdown-item" href="./htmlEtPrincipales.html">Etiquetas principales</a></li>
+                  <li><a class="dropdown-item" href="#">HTML semántico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Formularios</a></li>
+                  <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-css"></i> CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Esencial</a></li>
+                  <li><a class="dropdown-item" href="#">Colores y fondos</a></li>
+                  <li><a class="dropdown-item" href="#">Box model</a></li>
+                  <li><a class="dropdown-item" href="#">Tipografía</a></li>
+                  <li><a class="dropdown-item" href="#">Grid</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pseudoelementos y clases</a></li>
+                  <li><a class="dropdown-item" href="#">Flex</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box"></i> Modelo de cajas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Semántico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end" href="#"><i class="bi bi-pencil-square"></i> Diseño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-file-font"></i> Google Fonts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-emoji-smile"></i> Fonts Awesome</a>
+              </li>
+              <div class="vr text-light"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cloud-arrow-up"></i> Git</a>
+              </li>
+            </ul>
+            <div class="navbar-nav text-light"><a class="nav-link" href="./feedback.html"><i class="bi bi-chat-right-text"></i> Feedback</a></div>
+          </div>
+        </div>
+    </nav>
+    <nav class="container mt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50" href="index.html">Comenzando</a></li>
+            <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50" href="#">HTML</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Etiquetas esenciales</li>
+        </ol> 
+    </nav> 
+    <main class="container mt-3">
+      <div class="row">
+        <!--TABLA ETIQUETAS ESENCIALES -->
+        <div class="col">
+          <table class="table table-dark table-striped table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Etiqueta</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Enlace</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;html&gt;&lt;/html&gt;</code></td>
+                <td>Este elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz </td>
+                <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/html" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+              </tr>
+              <tr>
+                <td><code>&lt;head&gt;&lt;/head&gt;</code></td>
+                <td>Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página </td>
+                <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/head" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+              </tr>
+              <tr>
+                <td><code>&lt;title&gt;&lt;/title&gt;</code></td>
+                <td>Establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</td>
+                <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/title" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+              </tr>
+              <tr>
+                <td><code>&lt;body&gt;&lt;/body&gt;</code></td>
+                <td>Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</td>
+                <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/body" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--COD ETIQUETAS ESENCIALES -->
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-bg-dark">Anatomía de un documento HTML</div>
+          <div class="card-body text-start">
+            <p class="card-text">Cuando se crea cualquier documento htm/html se debe estructurar un esqueleto básico y con un orden en concreto. El ejemplo lo podemos ver en el siguiente código básico.</p>
+          </div>
+          <ul class="list-group list-group-flush text-start">
+            <li class="list-group-item text-bg-light fw-bold">HTML</li>
+            <li class="list-group-item p-0">
+              <pre class="m-0"><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </li>
+            <li class="list-group-item text-bg-light fw-bold">DOCTYPE</li>
+            <li class="list-group-item">
+              Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por ahora, eso es todo lo que necesitas saber.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="navbar fixed-bottom bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="https://mastermind.ac/home"><small class="p-0 muyPequenyo text-body-secondary">© Copyright Mastermind 2023</small></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+    <script src="./js/prism.js"></script>    
+</body>
+</html>

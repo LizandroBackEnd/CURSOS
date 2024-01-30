@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ia Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo text-danger ms-4" href="#">ia <span class="text-light">a</span>rt</a>
+        </div>
+        <ul class="navbar-nav me-3 mb-2 text-light nav-underline" id="navSpyIa">
+            <li class="nav-item">
+                <a class="nav-link active" href="#Favoritos">Favoritos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Nuevos">Nuevos</a>
+            </li>
+        </ul>
+        <button class="btn btn-sm btn-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            ENLACES
+        </button>
+    </nav>
+    <div id="carouseliaArt" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouseliaArt" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouseliaArt" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouseliaArt" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>The old bus, camping in a beautiful landscape</h5>
+                <p>Jack Bird @Jack_Bird</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Good Night NC</h5>
+                <p>Stephen @S1rr34l3st</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Local Market</h5>
+                <p>Pachamama @Cogumelos</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouseliaArt" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouseliaArt" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <main class="container mt-3" data-bs-spy="scroll" data-bs-target="#navSpyIa">
+        <h4 id="Favoritos" class="text-light">#Favoritos</h4>
+        <!--PRIMER CONTENDOR FLEX DE IMAGENES-->
+        <div class="d-flex flex-wrap flex-row justify-content-evenly">
+            <!--CARD CONTENEDOR DE IMAGEN-->
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img01.jpg" alt="Imagen01" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Enhanced DNA</p>
+                    <hr>
+                    <small>RealLirix <a href="https://creator.nightcafe.studio/u/xMVNluSxk2QvcismKwvj3vOhne43" class="link-secondary">@AaronLee</a></small>
+                </div>
+            </div>            
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img02.jpg" alt="Imagen01" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Winterscene</p>
+                    <hr>
+                    <small>Laeaurra Elaura<a href="https://creator.nightcafe.studio/u/JvsosjfKmeexEWlJE85WXBIyVym2" class="link-secondary">@Laeaurra</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img03.jpg" alt="Imagen01" width="150px" data-bs-toggle="modal" data-bs-target="#imagenModal">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end"" style="width: 150px;">
+                    <p>Untitled Creation</p>
+                    <hr>
+                    <small>Salvador Arellano<a href="https://creator.nightcafe.studio/u/T0prXTJp5EUgHbo78edt3a9ReUy2" class="link-secondary">@AngryKong75</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img04.jpg" alt="Imagen01" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Jambox</p>
+                    <hr>
+                    <small>Moose<a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary">@Moosebeard</a></small>
+                    <button type="button" class="btn btn-sm mt-3 btn-danger" data-bs-toggle="popover" data-bs-title="Qué es un NFT" data-bs-content="Token no fungible. Son obras digitales que pueden ser compradas y vendidas como cualquier otro tipo de propiedad, pero no tienen forma tangible. Una fotografía digital o un vídeo, por ejemplo, son piezas de arte que no existen en el mundo físico.">NFT</button>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img05.jpg" alt="Imagen01" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Farm life</p>
+                    <hr>
+                    <small>Diamis<a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary">@Diamis</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="border border-dark-subtle">
+                    <img src="./img/img06.jpg" alt="..." width="150px">
+                </div>
+                <div class="ps-1 pe-3 ms-2 me-3  bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p class="mb-1">ODD SELFIES</p>
+                    <hr>
+                    <small>Dracamy<a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary">@Dracamy</a></small>
+                </div>
+            </div> 
+        </div>
+        <div class="d-flex flex-wrap flex-row justify-content-evenly">
+            <!--CARD CONTENEDOR DE IMAGEN-->
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img07.jpg" alt="Imagen07" width="150px" height="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end style="width: 150px;">
+                    <p>Naturel Spaceship</p>
+                    <hr>
+                    <small>Sharik Di Roka<a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary"> @DiH</a></small>
+                </div>
+            </div>            
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img08.jpg" alt="Imagen08" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>a zombie</p>
+                    <hr>
+                    <small>Richard Johansson</small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img09.jpg" alt="Imagen09" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end"" style="width: 150px;">
+                    <p>ESC</p>
+                    <hr>
+                    <small>Reznik <a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary"> @Reznik</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img10.jpg" alt="Imagen10" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Untitled Creation</p>
+                    <hr>
+                    <small>death stalker</small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img11.jpg" alt="Imagen11" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Lets walk, once and forever</p>
+                    <hr>
+                    <small>Kuba<a href="https://creator.nightcafe.studio/u/suPvyuC8IgW71FdfGsOyBNwTax62" class="link-secondary">@Drienn</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="border border-dark-subtle">
+                    <img src="./img/img12.jpg" alt="..." width="150px">
+                </div>
+                <div class="ps-1 pe-3 ms-2 me-3  bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p class="mb-1">Other side</p>
+                    <hr>
+                    <small>Anonymous User</small>
+                </div>
+            </div> 
+        </div>
+        <h4 id="Nuevos" class="text-light">#Nuevos</h4>
+        <div class="d-flex flex-wrap flex-row justify-content-evenly">
+            <!--CARD CONTENEDOR DE IMAGEN-->
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img13.jpg" alt="Imagen07" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>A dragon made of ice</p>
+                    <hr>
+                    <small>KaRi <a href="https://creator.nightcafe.studio/u/xMVNluSxk2QvcismKwvj3vOhne43" class="link-secondary">@Kari_GamePlaza</a></small>
+                </div>
+            </div>            
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img14.jpg" alt="Imagen08" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end" style="width: 150px;">
+                    <p>Cat in Orange & Beige</p>
+                    <hr>
+                    <small>CarineVP<a href="https://creator.nightcafe.studio/u/JvsosjfKmeexEWlJE85WXBIyVym2" class="link-secondary">@CarineVP</a></small>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <!--IMAGEN-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/img15.jpg" alt="Imagen09" width="150px">
+                </div>
+                <!--TEXTO-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-dark text-white-50 align-self-end"" style="width: 150px;">
+                    <p>Purple deep full moon</p>
+                    <hr>
+                    <small>Mystic Creations Studio<a href="https://creator.nightcafe.studio/u/T0prXTJp5EUgHbo78edt3a9ReUy2" class="link-secondary">@Mystic-Creations-Studio</a></small>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--TOSTADA DE NOVEDADES-->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">ia Art</strong>
+            <small>1 día</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Nuevas fotografías añadidas
+          </div>
+        </div>
+    </div>
+    <!-- MODAL DE IMAGEN-->
+    <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Untitled Creation</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./img/img03.jpg" class="img-fluid" alt="Imagen 03 IA">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--OFFCANVAS-->
+    <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-danger" id="offcanvasExampleLabel">otras <span class="text-light">g</span>alerias</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <div class="list-group list-group-item-dark">
+                <a href="https://creator.nightcafe.studio/explore" class="list-group-item list-group-item-action fw-bold"> NightCafe</a>
+                <a href="https://www.artzone.ai/" class="list-group-item list-group-item-action fw-bold"> Art Zone</a>
+                <a href="https://openart.ai/discovery" class="list-group-item list-group-item-action fw-bold">Open Art</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoHTMLCSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="./css/prism.css" rel="stylesheet">
+</head>
+<body class="bg-secondary-subtle">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="./img/logo_web.png" alt="LOGO HTML&CSS"> <span class="align-middle">TODOHTML&CSS</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i> Comenzando</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-html"></i> HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./htmlEscencial.html">Esencial</a></li>
+                  <li><a class="dropdown-item" href="./htmlEtPrincipales.html">Etiquetas principales</a></li>
+                  <li><a class="dropdown-item" href="#">HTML semántico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Formularios</a></li>
+                  <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-filetype-css"></i> CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Esencial</a></li>
+                  <li><a class="dropdown-item" href="#">Colores y fondos</a></li>
+                  <li><a class="dropdown-item" href="#">Box model</a></li>
+                  <li><a class="dropdown-item" href="#">Tipografía</a></li>
+                  <li><a class="dropdown-item" href="#">Grid</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pseudoelementos y clases</a></li>
+                  <li><a class="dropdown-item" href="#">Flex</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box"></i> Modelo de cajas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Semántico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end" href="#"><i class="bi bi-pencil-square"></i> Diseño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-file-font"></i> Google Fonts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-emoji-smile"></i> Fonts Awesome</a>
+              </li>
+              <div class="vr text-light"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cloud-arrow-up"></i> Git</a>
+              </li>
+            </ul>
+            <div class="navbar-nav text-light"><a class="nav-link" href="./feedback.html"><i class="bi bi-chat-right-text"></i> Feedback</a></div>
+          </div>
+        </div>
+    </nav>
+    <nav class="container mt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50" href="index.html">Comenzando</a></li>
+          <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50" href="htmlEsencial.html">HTML</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Etiquetas Principales</li>
+        </ol>
+    </nav>
+    <main class="container mt-3">
+        <div class="row">
+          <!--TABLA de ETIQUETAS ESENCIALES-->
+          <div class="col">
+            <table class="table table-dark table-striped table-sm table-bordered rounded">
+              <thead>
+                <tr>
+                  <th scope="col">Etiqueta</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Enlace</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;p&gt;&lt;/p&gt;</code></td>
+                  <td>El elemento p (párrafo) es el apropiado para distribuir el texto en párrafos.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;div&gt;&lt;/div&gt;</code></td>
+                  <td>Sirve para crear secciones o agrupar contenidos</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;span&gt;&lt;/span&gt;</code></td>
+                  <td>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;img&gt;&lt;/img&gt;</code></td>
+                  <td>El elemento de imagen HTML &lt;img&gt; representa una imagen en el documento.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;ul&gt;&lt;li&gt;</code></td>
+                  <td>Crea una lista no ordenada.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;ol&gt;&lt;li&gt;</code></td>
+                  <td>El elemento ol permite definir listas o viñetas ordenadas ("Ordered List"), bien con numeración o alfabéticamente.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+                <tr>
+                  <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+                  <td>Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</td>
+                  <td class="text-center align-middle"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a" class="link-info "><i class="bi bi-box-arrow-up-right"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <img src="./img/grumpy-cat-small.png" class="card-img-top" alt="Anatomia">
+              <div class="card-body text-start">
+                <p class="card-text">Las principales partes de nuestro elemento son:  </p>
+                  <ul>
+                    <li>La etiqueta de apertura: consiste en el nombre del elemento (en este caso, p), encerrado entre paréntesis angulares de apertura y cierre. Esta etiqueta de apertura marca dónde comienza el elemento o comienza a tener efecto. En este ejemplo, precede al comienzo del texto del párrafo.</li>
+                    <li>El contenido: Este es el contenido del elemento. En este ejemplo, es el texto del párrafo.</li>
+                    <li>La etiqueta de cierre: Es lo mismo que la etiqueta de apertura, excepto que incluye una barra diagonal antes del nombre del elemento. Esto indica dónde termina el elemento; en este caso, dónde finaliza el párrafo. No incluir una etiqueta de cierre es un error común de principiante, y puede conducir a extraños resultados.</li>
+                  </ul>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Primer ejemplo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body m-0 p-0">
+                        <pre class="m-0 pb-0 pt-0">
+                            <code class="language-html">
+&lt;p&gt;Mi gato es &lt;strong&gt;muy&lt;/strong&gt; gruñón.&lt;/p&gt;
+                            </code>
+                        </pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Segundo ejemplo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body  m-0 p-0">
+                        <pre class="m-0 pb-0 pt-0">
+                            <code class="language-html">
+&lt;ol&gt;
+    &lt;li&gt;punto uno&lt;/li&gt;
+    &lt;li&gt;punto dos&lt;/li&gt;
+    &lt;li&gt;punto tres&lt;/li&gt;
+&lt;/ol&gt;
+                            </code></pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Tercer ejemplo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="https://mastermind.ac/home"><small class="p-0 muyPequenyo text-body-secondary">© Copyright Mastermind 2023</small></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./js/prism.js"></script>
+</body>
+</html>
