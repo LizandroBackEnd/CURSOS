@@ -1,17 +1,26 @@
 import { useState } from 'react';
 import './App.css'; 
-import Celda from './Celda';;
+import Celda from './Celda'; 
+import Tiempo from './Tiempo';
 
-function App() {  
+
+function App() {   
+  const valores = ["1","1","1","0","0","1","*","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1","*","1","2"];
   //Definir propiedades, valores, componentes  
   const [mapaValores, setMapaValores] = useState(Array(30).fill(" "));
   const celdas = mapaValores.map((item,index) => 
-   <div className="col-auto p-0" key={index}><Celda valor={item}/></div>
+   <div className="col-auto p-0" key={index}><Celda valor={item} onCeldaClick = { () => mostarValor(index)}/></div>
   );  
    
 //Funcion respuesta al BTN  
 const btnComenzar = () => { 
- setMapaValores (["1","1","1","0","0","1","*","1","*","1","0","0","1","1","2","2","1","0","1","*","*","1","0","1","2","2","1","*","1","2"]); 
+ setMapaValores (Array(30).fill(" "));
+} 
+ 
+const mostarValor = (index) => { 
+  const valoresNuevos = mapaValores.slice(); 
+  valoresNuevos[index] = valores[index]; 
+  setMapaValores(valoresNuevos);
 }
   
   return ( 
@@ -24,9 +33,7 @@ const btnComenzar = () => {
               {/* Añade un texto alternativo al atributo alt para mejorar la accesibilidad */}
               <img src="acierto.png" alt="Icono de acierto" style={{ width: 50 }} />
             </div>
-            <div className="lcdText text-danger pe-2 m-2 borderInsideS" style={{ width: 54 }}>
-              00
-            </div>
+            < Tiempo />
           </div>
         </div>
         <div className="row borderInside bg-body-secondary text-center justify-content-center">

@@ -1,11 +1,13 @@
-function Celda({valor}) {
+function Celda({valor = "", onCeldaClick}) { 
+    
     return (   
         <div> 
             <button
                 className="border border-2 border-dark-subtle fs-2 fw-bold text-success"
-                style={{ minWidth: 50, minHeight: 50 }}
+                style={{ minWidth: 50, minHeight: 50 }} 
+                onClick={onCeldaClick}
               >
-               {valor}
+               {valor === " " ? "\u00A0" : valor}
               </button>
         </div>
     );
