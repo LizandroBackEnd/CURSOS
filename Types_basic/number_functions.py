@@ -1,5 +1,5 @@
 #Importamos el módulo math 
-import math
+import math 
  
 print(round(1.3)) #La función round redondea el número al entero más cercano 
 print(round(1.7))  

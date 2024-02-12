@@ -3,7 +3,7 @@ descripcion_curso = """
 Ultimate Pyton, 
 este curo contempla todos los detalles 
 que necesitas para encontrar  
-un trabajo como desarrollador de Pyton 
+un trabajo como desarrollador de Pyton  
 """ 
  
 print (len(nombre_curso)) #La funcion len() nos permite saber la longitud de un string

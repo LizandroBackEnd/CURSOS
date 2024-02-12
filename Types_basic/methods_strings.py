@@ -16,6 +16,6 @@ print(name.replace("l","L")) #El metodo replace() nos permite reemplazar un cara
 print("liz" in name) #El operador in nos permite verificar si un string se encuentra en otro string, nos devuelve True si se encuentra y False si no se encuentra 
 print("liz" not in name) #El operador not in nos permite verificar si un string no se encuentra en otro string, nos devuelve True si no se encuentra y False si se encuentra
  
-#Encadenamiento de metodos 
+#Encadenamiento de metodos  
  
 print(name.strip().capitalize()) #Encadenamos el metodo strip() con el metodo capitalize()

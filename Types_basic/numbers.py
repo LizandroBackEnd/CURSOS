@@ -5,7 +5,7 @@ imaginario = 3 + 2j # Complejo -> Complex
 # numero = numero + 2 
 numero += 2  
 numero -= 2 
-numero *= 2 
+numero *= 2  
 numero /= 2 
 
  

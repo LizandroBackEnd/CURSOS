@@ -4,7 +4,7 @@ n2 = input("Ingresa el segundo número: ")
 n1 =  int(n1) 
 n2 =  int(n2)
  
-suma = n1 + n2 
+suma = n1 + n2  
 resta = n1 - n2 
 multi = n1 * n2 
 div = n1 / n2 
