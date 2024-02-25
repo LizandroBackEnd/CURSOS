@@ -1,7 +1,7 @@
 <h1 align="center">NEXT.JS COURSE</h1>
 
 <p align="center">
-  <img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Icon">
+  <img src="https://upload.vectorlogo.zone/logos/nextjs/images/cf48b8f7-01c5-4564-a4e7-3854b6aea45c.svg" alt="Next.js Icon">
 </p>
 
 ## Description
@@ -32,7 +32,7 @@ Next.js is a React framework that simplifies the creation of modern web applicat
 <h1 align="center">CURSO NEXT.JS</h1>
 
 <p align="center">
-  <img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Icon">
+  <img src="https://upload.vectorlogo.zone/logos/nextjs/images/cf48b8f7-01c5-4564-a4e7-3854b6aea45c.svg" alt="Next.js Icon">
 </p>
 
 ## Descripción
