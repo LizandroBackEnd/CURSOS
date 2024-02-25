@@ -1,0 +1,15 @@
+.conPrincipal { 
+    margin-top: 90px;
+} 
+ 
+.color404{ 
+    color: #6200EE;
+} 
+ 
+.colorFilter404{ 
+    filter: invert(9%) sepia(80%) saturate(6074) hue-rotate(268deg) brightness(115%) contrast(113%);
+} 
+ 
+.nav-link.acitve { 
+    font-weight: bold;
+}

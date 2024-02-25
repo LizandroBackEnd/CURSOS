@@ -1,10 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import Image from 'next/image'
+import CarouselClient from './component/CarouselClient'
 
 
 export default function Home() {
   return (
-    <main className='text-center'>
-      <h1 className='text-danger'>Hola liz</h1>
-    </main>
-  );
+    <div className="container-fluid  pt-5 ">
+      <CarouselClient/>
+    </div>
+  )
 }
